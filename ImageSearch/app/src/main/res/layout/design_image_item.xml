@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="imageResult"
+            type="com.gkhn.imagesearch.model.ImageResult" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="centerCrop"
+            android:urlSrc="@{imageResult.largeImageURL}"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/gradient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableTint="@color/white"
+            android:ellipsize="end"
+            android:letterSpacing=".1"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@{imageResult.user}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="@id/gradient"
+            app:layout_constraintStart_toStartOf="@id/gradient"
+            app:layout_constraintTop_toTopOf="@id/gradient" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
