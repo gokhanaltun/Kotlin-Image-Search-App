@@ -15,6 +15,6 @@ Simple Image Search App Example With Kotlin
 
 ### Screenshot
 
- <img alt="appImage" width="300" height="600" src="assets/default.jpg"> </img>
+ <img alt="appImage" width="300" height="600" src="assets/default-result.jpg"> </img>
 
- <img alt="appImage" width="300" height="600" src="assets/search.jpg"> </img>
+ <img alt="appImage" width="300" height="600" src="assets/search-result.jpg"> </img>
