@@ -13,7 +13,7 @@ Simple Image Search App Example With Kotlin
 - `Flow`
 - `Paging`
 
-### Screenshot
+### Screenshots
 
  <img alt="appImage" width="300" height="600" src="assets/default-result.jpg"> </img>
 
