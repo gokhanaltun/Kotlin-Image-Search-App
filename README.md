@@ -12,3 +12,9 @@ Simple Image Search App Example With Kotlin
 - `Coroutines`
 - `Flow`
 - `Paging`
+
+### Screenshot
+
+ <img alt="appImage" width="300" height="600" src="assets/default.jpg"> </img>
+
+ <img alt="appImage" width="300" height="600" src="assets/search.jpg"> </img>
